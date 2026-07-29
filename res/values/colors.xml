@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Primary Colors -->
+    <color name="purple_500">#9C27B0</color>
+    <color name="purple_600">#7B1FA2</color>
+    <color name="purple_700">#6A1B9A</color>
+    <color name="pink_500">#E91E63</color>
+    <color name="pink_600">#D81B60</color>
+    <color name="orange_400">#FFA726</color>
+    <color name="orange_500">#FF9800</color>
+
+    <!-- Accent Colors -->
+    <color name="cyan_500">#00BCD4</color>
+    <color name="blue_500">#2196F3</color>
+    <color name="blue_600">#1E88E5</color>
+    <color name="green_500">#4CAF50</color>
+    <color name="green_600">#43A047</color>
+    <color name="red_500">#F44336</color>
+    <color name="red_600">#E53935</color>
+
+    <!-- Neutral Colors -->
+    <color name="white">#FFFFFF</color>
+    <color name="black">#000000</color>
+    <color name="gray_50">#F9FAFB</color>
+    <color name="gray_100">#F3F4F6</color>
+    <color name="gray_200">#E5E7EB</color>
+    <color name="gray_300">#D1D5DB</color>
+    <color name="gray_400">#9CA3AF</color>
+    <color name="gray_500">#6B7280</color>
+    <color name="gray_600">#4B5563</color>
+    <color name="gray_700">#374151</color>
+    <color name="gray_800">#1F2937</color>
+    <color name="gray_900">#111827</color>
+
+    <!-- Transparent -->
+    <color name="transparent">#00000000</color>
+    <color name="transparent_white_10">#1AFFFFFF</color>
+    <color name="transparent_white_20">#33FFFFFF</color>
+    <color name="transparent_black_60">#99000000</color>
+    <color name="transparent_white_60">#99FFFFFF</color>
+</resources>

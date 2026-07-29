@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="24dp"
+    app:cardCornerRadius="16dp"
+    app:cardElevation="8dp"
+    app:cardBackgroundColor="#FFFFFF">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="24dp"
+        android:gravity="center">
+
+        <!-- Ikon Peringatan -->
+        <ImageView
+            android:layout_width="64dp"
+            android:layout_height="64dp"
+            android:src="@drawable/ic_alert"
+            app:tint="#E57373"
+            android:layout_marginBottom="16dp"/>
+
+        <!-- Judul Dialog -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Hapus Riwayat"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:textColor="#4A5568"
+            android:layout_marginBottom="8dp"/>
+
+        <!-- Pesan Konfirmasi -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Apakah Anda yakin ingin menghapus riwayat deteksi jatuh ini? Data yang dihapus tidak dapat dikembalikan."
+            android:textSize="14sp"
+            android:textColor="#8D93A5"
+            android:gravity="center"
+            android:layout_marginBottom="24dp"/>
+
+        <!-- Tombol Aksi -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:weightSum="2">
+
+            <!-- Tombol Batal -->
+            <Button
+                android:id="@+id/btnBatalHapus"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Batal"
+                android:textColor="#8D93A5"
+                android:backgroundTint="#F2F2F2"
+                android:layout_marginEnd="8dp"
+                android:textAllCaps="false"
+                android:textStyle="bold"
+                app:cornerRadius="8dp"/>
+
+            <!-- Tombol Hapus -->
+            <Button
+                android:id="@+id/btnKonfirmasiHapus"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Hapus"
+                android:textColor="#FFFFFF"
+                android:backgroundTint="#E57373"
+                android:layout_marginStart="8dp"
+                android:textAllCaps="false"
+                android:textStyle="bold"
+                app:cornerRadius="8dp"/>
+        </LinearLayout>
+
+    </LinearLayout>
+
+</androidx.cardview.widget.CardView>

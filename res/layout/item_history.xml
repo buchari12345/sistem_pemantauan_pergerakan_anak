@@ -1,0 +1,234 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginHorizontal="16dp"
+    android:layout_marginVertical="8dp"
+    app:cardCornerRadius="16dp"
+    app:cardElevation="4dp"
+    app:cardBackgroundColor="#FFFFFF">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:id="@+id/mpuFullContainer"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#FFF5F5" android:padding="16dp"
+            android:orientation="horizontal"
+            android:gravity="center_vertical"
+            android:visibility="gone">
+
+            <ImageView
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:src="@drawable/ic_alert"
+                app:tint="#FF8A80"/>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_marginStart="16dp">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+                    <TextView
+                        android:id="@+id/mpuTimeText"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="10:00:00"
+                        android:textSize="14sp"
+                        android:textColor="#8D93A5"/>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Hardware"
+                        android:layout_alignParentEnd="true"
+                        android:textSize="12sp"
+                        android:textStyle="italic"
+                        android:textColor="#E57373"/>
+                </RelativeLayout>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="TERDETEKSI JATUH!"
+                    android:textColor="#E57373" android:textStyle="bold"
+                    android:textSize="16sp"/>
+
+                <TextView
+                    android:id="@+id/mpuDetailText"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Pemicu Benturan: Accel 21.60"
+                    android:textColor="#4A5568" android:layout_marginTop="2dp"/>
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/yoloFullContainer"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <ImageView
+                    android:id="@+id/yoloCaptureImage"
+                    android:layout_width="match_parent"
+                    android:layout_height="200dp"
+                    android:scaleType="centerCrop" />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="YOLO CAPTURE"
+                    android:background="#994A5568" android:textColor="#FFFFFF" android:paddingHorizontal="8dp"
+                    android:paddingVertical="4dp"
+                    android:textStyle="bold"
+                    android:textSize="12sp"
+                    android:layout_margin="8dp"/>
+            </RelativeLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:padding="16dp">
+
+                <!-- BARIS 1: Nama anak (menonjol) di kiri, jam kejadian kecil di kanan -->
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:id="@+id/yoloNameText"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentStart="true"
+                        android:layout_toStartOf="@+id/yoloTimeText"
+                        android:layout_marginEnd="8dp"
+                        android:text="Umum"
+                        android:textSize="18sp"
+                        android:textStyle="bold"
+                        android:textColor="#4A5568"/>
+
+                    <TextView
+                        android:id="@+id/yoloTimeText"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentEnd="true"
+                        android:layout_centerVertical="true"
+                        android:text="10:00:00"
+                        android:textSize="12sp"
+                        android:textColor="#8D93A5"/>
+                </RelativeLayout>
+
+                <!-- BARIS 2: Status deteksi -->
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Status: TERDETEKSI JATUH"
+                    android:textStyle="bold"
+                    android:textSize="14sp"
+                    android:textColor="#E57373"
+                    android:layout_marginTop="6dp"/>
+
+                <!-- BARIS 3, 4, 5: Metode Validasi, Akurasi AI, dan Sudut Jatuh -->
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:layout_marginTop="8dp">
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:gravity="center_vertical">
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Metode Validasi:"
+                            android:textColor="#8D93A5"
+                            android:textSize="12sp"/>
+                        <TextView
+                            android:id="@+id/yoloConfidenceText"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="6dp"
+                            android:text="Validasi"
+                            android:textStyle="bold"
+                            android:textColor="#4A5568"
+                            android:textSize="12sp"/>
+                    </LinearLayout>
+
+                    <!-- Teks Akurasi AI -->
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:gravity="center_vertical"
+                        android:layout_marginTop="4dp">
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Akurasi AI:"
+                            android:textColor="#8D93A5"
+                            android:textSize="12sp"/>
+                        <TextView
+                            android:id="@+id/yoloAkurasiAiText"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="6dp"
+                            android:text="--"
+                            android:textStyle="bold"
+                            android:textColor="#4A5568"
+                            android:textSize="12sp"/>
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:gravity="center_vertical"
+                        android:layout_marginTop="4dp">
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Sudut Jatuh:"
+                            android:textColor="#8D93A5"
+                            android:textSize="12sp"/>
+                        <TextView
+                            android:id="@+id/yoloKemiringanText"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="6dp"
+                            android:text="--°"
+                            android:textStyle="bold"
+                            android:textColor="#E57373"
+                            android:textSize="12sp"/>
+                    </LinearLayout>
+                </LinearLayout>
+
+                <!-- BARIS 6: Sumber trigger, dibuat kecil & muted agar tidak dominan -->
+                <TextView
+                    android:id="@+id/yoloSourceText"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Computer Vision"
+                    android:textColor="#8D93A5"
+                    android:textSize="11sp"
+                    android:textStyle="italic"
+                    android:layout_marginTop="4dp"/>
+            </LinearLayout>
+        </LinearLayout>
+
+    </LinearLayout>
+</androidx.cardview.widget.CardView>
