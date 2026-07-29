@@ -66,9 +66,9 @@ class CCTVStreamThread:
 # ==========================================
 # Dictionary (Kamus) yang mencocokkan "Nama Folder Dataset Wajah" dengan "UID Akun Firebase Android"
 BUKU_ALAMAT_ORTU = {
-    "archellino": "1clNtNS99fW87bH0mrhGjXsIyOK2",
-    "rima": "BUoFY60FceYDcfQo68DuUxhscwL2",
-    "bucha": "bs5hOwgMITc3Bf9ETamfXC48Slb2",
+    "anak 1": "UID Akun Firebase Android",
+    "anak 2": "UID Akun Firebase Android",
+    "anak 3": "UID Akun Firebase Android",
 }
 
 # Jeda waktu (detik) sebelum status "BAHAYA" di Firebase otomatis dikembalikan ke "AMAN"
