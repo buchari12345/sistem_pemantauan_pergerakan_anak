@@ -18,8 +18,8 @@
 #define WIFI_SSID "muslem"
 #define WIFI_PASSWORD "muslem12345"
 
-#define FIREBASE_HOST "falldetection-45dfa-default-rtdb.asia-southeast1.firebasedatabase.app"
-#define FIREBASE_AUTH "uBudlsbeiMBcbT89fb21ZggblPLptQGcxGVz7IzQ"
+#define FIREBASE_HOST "sesuaikan sendiri"
+#define FIREBASE_AUTH "sesuaikan sendiri"
 
 FirebaseData fbdo;
 FirebaseAuth auth;
