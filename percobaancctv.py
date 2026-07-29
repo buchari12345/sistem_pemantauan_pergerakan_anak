@@ -79,7 +79,7 @@ try:
     # Memasukkan kunci rahasia Firebase untuk mendapatkan akses admin
     cred = credentials.Certificate("kunci-firebase.json")
     firebase_admin.initialize_app(cred, {
-        'databaseURL': 'https://falldetection-45dfa-default-rtdb.asia-southeast1.firebasedatabase.app'
+        'databaseURL': 'https://sesuaikan sendiri'
     })
     print("[OK] Firebase terhubung!")
 except Exception as e:
@@ -124,7 +124,7 @@ known_face_encodings_np = np.array(data_wajah["encodings"])
 known_face_names = data_wajah["names"]
 
 # Menghubungkan ke alamat stream RTSP CCTV TP-Link Tapo
-URL_CCTV = "rtsp://bucha12345:bucha12345@10.227.111.93:554/stream1"
+URL_CCTV = "rtsp://nama:pw@ipcctv:554/stream1"
 print(f"[INFO] Menyambung ke CCTV: {URL_CCTV}")
 cctv = CCTVStreamThread(URL_CCTV)
 time.sleep(2) # Memberi waktu kamera untuk pemanasan
